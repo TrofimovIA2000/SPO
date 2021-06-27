@@ -1,0 +1,24 @@
+a = 1;
+b = 5;
+c = 0;
+d = LinkedList;
+d.push(1);
+d.push(2);
+d.push(3);
+
+while (a < b)
+{
+    a = a + d.get(0);
+
+    if (c < a)
+    {
+        c = c + d.get(1);
+    }
+    else
+    {
+        c = c + d.get(2);
+    }
+}
+d.remove(0);
+d.remove(1);
+d.remove(3);

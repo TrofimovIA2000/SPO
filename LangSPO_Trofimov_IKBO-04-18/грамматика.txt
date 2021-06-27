@@ -1,0 +1,12 @@
+lang -> expr+
+expr -> assign_expr | if_expr | while_expr
+assign_expr -> переменная присвоить (math_expr | строка) окончание
+value -> INT | строка | переменная
+
+while_expr -> math_logic конец expr конец
+if_expr -> math_logic начало expr конец
+иначе -> начало expr конец
+
+math_logic -> value (логическая_операция (logical_expr | math_expr))*
+math_expr -> (value | math_expr_wbr)(операция math_expr)*
+math_expr_wbr -> LP math_expr RP
