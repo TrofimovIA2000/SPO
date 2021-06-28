@@ -8,15 +8,15 @@ d.push(3);
 
 while (a < b)
 {
-    a = a + d.get(0);
+    a = a + d.get(1);
 
     if (c < a)
     {
-        c = c + d.get(1);
+        c = c + d.get(2);
     }
     else
     {
-        c = c + d.get(2);
+        c = c + d.get(3);
     }
 }
-d.remove(3);
+d.remove(1);
