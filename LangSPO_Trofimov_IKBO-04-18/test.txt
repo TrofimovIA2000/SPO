@@ -19,6 +19,4 @@ while (a < b)
         c = c + d.get(2);
     }
 }
-d.remove(0);
-d.remove(1);
 d.remove(3);
